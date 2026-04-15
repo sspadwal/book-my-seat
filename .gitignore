@@ -1,0 +1,126 @@
+# ============================================================
+#  Cinema Booking System — Root .gitignore
+#  Frontend: React + Vite (Vercel)
+#  Backend : Node.js + Express + PostgreSQL (Render)
+# ============================================================
+
+
+# ──────────────────────────────────────────────
+#  Dependencies
+# ──────────────────────────────────────────────
+node_modules/
+client/node_modules/
+server/node_modules/
+
+
+# ──────────────────────────────────────────────
+#  Environment & Secrets  ⚠️  NEVER commit these
+# ──────────────────────────────────────────────
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+server/.env
+client/.env
+client/.env.local
+client/.env.production
+
+
+# ──────────────────────────────────────────────
+#  Build Output
+# ──────────────────────────────────────────────
+# Vite / React production build (Vercel builds this itself)
+client/dist/
+client/dist-ssr/
+
+# Optional: server build output if you add a build step
+server/dist/
+
+
+# ──────────────────────────────────────────────
+#  Logs
+# ──────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+
+# ──────────────────────────────────────────────
+#  OS Generated Files
+# ──────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+
+# ──────────────────────────────────────────────
+#  Editor & IDE
+# ──────────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# ──────────────────────────────────────────────
+#  Vite Specific
+# ──────────────────────────────────────────────
+client/.vite/
+
+
+# ──────────────────────────────────────────────
+#  Vercel (Frontend deployment)
+# ──────────────────────────────────────────────
+.vercel
+client/.vercel
+
+
+# ──────────────────────────────────────────────
+#  Render (Backend deployment)
+# ──────────────────────────────────────────────
+# Render uses environment variables set in the dashboard
+# No special files needed, but exclude any render local configs
+.render/
+
+
+# ──────────────────────────────────────────────
+#  Temporary / Test Files
+# ──────────────────────────────────────────────
+server/tmp_*.mjs
+server/tmp_*.js
+*.tmp
+*.temp
+
+
+# ──────────────────────────────────────────────
+#  Coverage & Testing
+# ──────────────────────────────────────────────
+coverage/
+*.lcov
+.nyc_output/
+
+
+# ──────────────────────────────────────────────
+#  Miscellaneous
+# ──────────────────────────────────────────────
+*.pem
+*.key
+*.cert

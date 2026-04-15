@@ -1,0 +1,8 @@
+CREATE TABLE myapp.bookings (
+    id SERIAL PRIMARY KEY,
+    user_id INT  REFERENCES myapp.users(id) ON DELETE CASCADE,
+    seat_id INT NOT NULL,
+    is_booked BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
